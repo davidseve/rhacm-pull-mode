@@ -4,11 +4,5 @@ metadata:
   name: managed-placement
   namespace: openshift-gitops
 spec:
-  predicates:
-    - requiredClusterSelector:
-        labelSelector:
-          matchExpressions:
-            - key: name
-              operator: NotIn
-              values:
-                - local-cluster
+  clusterSets:
+    - managed

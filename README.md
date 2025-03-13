@@ -5,9 +5,6 @@ Red Hat Advanced Cluster Management for Kubernetes pull mode
 
 ### Managed Clusters
 - Install Openshift GitOps operator
-```
-oc apply -f ./cluster-configuration/multi-cluster-hub.yaml
-```
 - Configure Openshift GitOps
 ```
 oc apply -f ./cluster-configuration/argocd-cluster-role-binding.yaml
@@ -46,5 +43,5 @@ oc apply -f ./cluster-configuration/gitops-cluster.yaml
 ## Deploy Argo CD ApplicationSet
 
 ```
-oc apply -f ./cluster-configuration/gitops-cluster.yaml
+oc apply -f ./applications/applicationSetOfApps.yaml
 ```

@@ -10,7 +10,7 @@ spec:
        labelSelector:
          matchLabels:
            cluster.open-cluster-management.io/placement: managed-placement
-       requeueAfterSeconds: 180
+       requeueAfterSeconds: 30
  template:
    metadata:
      annotations:
